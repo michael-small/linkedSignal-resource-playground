@@ -2,6 +2,7 @@ import { Component, inject, input, linkedSignal, resource } from '@angular/core'
 import { UserService } from './user.service';
 import { FormsModule } from '@angular/forms';
 
+// Example from Armen Vardanyan: https://x.com/Armandotrue/status/1847285255406846124/photo/1
 @Component({
   selector: 'app-child',
   standalone: true,
