@@ -14,7 +14,7 @@ import { JsonPipe } from '../../../angular/dist/packages-dist/common';
         Email: <input [(ngModel)]="form.email"/>
         Age: <input [(ngModel)]="form.age"/>
         <br />
-        Accepted TOS: <input type="checkbox" [(ngModel)]="acceptedTOS" [checked]="acceptedTOS"/>
+        Accepted TOS: <input type="checkbox" [(ngModel)]="form_acceptedTOS" [checked]="form_acceptedTOS"/>
     }
   `,
 })
@@ -26,7 +26,6 @@ export class ChildMoreFeaturesComponent {
         request: () => ({id:  this.userId()}),
         loader: (params) => this.userService.getUser(params.request.id)
     })
-    formInitial = computed(() => this.userResource.value())
     
     form = {
         fullName: linkedSignal(() => this.userResource.value()?.firstName ?? ''),
@@ -34,7 +33,7 @@ export class ChildMoreFeaturesComponent {
         age: linkedSignal(() => this.userResource.value()?.age),
     }
 
-    acceptedTOS = linkedSignal({
+    form_acceptedTOS = linkedSignal({
         source: this.form.fullName,
         computation: (res, prev) => {
             return !prev?.source ? res : false
