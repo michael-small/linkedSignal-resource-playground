@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   imports: [FormsModule],
   template: `
     <h1>Edit Profile</h1>
-    @if (userResource.status() === 'resolved') {
+    @if (!userResource.isLoading()) {
         Full Name: <input [(ngModel)]="form.fullName"/>
         Email: <input [(ngModel)]="form.email"/>
         Age: <input [(ngModel)]="form.age"/>

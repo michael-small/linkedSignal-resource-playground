@@ -9,7 +9,7 @@ import { JsonPipe } from '../../../angular/dist/packages-dist/common';
   imports: [FormsModule, JsonPipe],
   template: `
     <h1>Edit Profile</h1>
-    @if (userResource.status() === 'resolved') {
+    @if (!userResource.isLoading()) {
         Full Name: <input [(ngModel)]="form.fullName"/>
         Email: <input [(ngModel)]="form.email"/>
         Age: <input [(ngModel)]="form.age"/>
