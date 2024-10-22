@@ -4,6 +4,9 @@
 - Resources PR: https://github.com/angular/angular/pull/58255
 - How to symlink to use the PR's branch: https://github.com/angular/angular/blob/main/contributing-docs/building-and-testing-angular.md#invoking-the-angular-cli
 - Example from Armen Vardanyan: https://x.com/Armandotrue/status/1847285255406846124/photo/1
+- Linking: https://github.com/crutchcorn/ng-linked-signal-and-resource-demo#installing-the-demo
+- CLearing bazel cache if install/build gives you issues (but every other build if I do builds twice just works, idk, WSL things): `rm -rf ~/.cache/bazel/_bazel_${your_username}/cache/repos/v1`
+- Random last note: `sudo` when building the node modules for a linked project gave me WSL issues. Don't do that. No issues after removing.
 
 ## Development server
 
