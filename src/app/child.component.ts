@@ -22,7 +22,7 @@ export class ChildComponent {
 
     userResource = resource({
         request: () => ({id:  this.userId()}),
-        loader: (params) => this.userService.getUser(params.request.id)
+        loader: (params) => this.userService.getUserPromise(params.request.id)
     })
     
     form = {
