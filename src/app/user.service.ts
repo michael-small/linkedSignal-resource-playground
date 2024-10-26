@@ -48,4 +48,8 @@ export class UserService {
     }
     return of(user);
   }
+
+  getStaticObservable() {
+    return of(Date.now());
+  }
 }
