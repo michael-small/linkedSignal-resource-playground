@@ -9,6 +9,7 @@ Angular 19 version. The RFC for resource is coming at some later point.
 - Before there was an officially released build, I learned how to manually run Angular source code. 
 See the next section on how to do that like how I did it, as well as a video link to how to do it much
 easier than how I did it.
+    - Easiest way: https://gist.github.com/michael-small/afa19b7448a4db8ae0ffdd0e8a5d08e9 
 - My intent with this repo if I am not lazy is to extract it to Stackblitz to easily share with others,
   showing off various scenarios to use both these new signal functions.
 

@@ -1,8 +1,8 @@
-import { Component, computed, inject, input, linkedSignal, resource } from '@angular/core';
+import { Component, inject, input, linkedSignal, resource } from '@angular/core';
 import { UserService } from './user.service';
 import { FormsModule } from '@angular/forms';
-import { JsonPipe } from '../../../angular/dist/packages-dist/common';
 import { rxResource } from '@angular/core/rxjs-interop';
+import {JsonPipe} from '@angular/common';
 
 @Component({
   selector: 'app-child-more-features',
