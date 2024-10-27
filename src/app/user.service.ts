@@ -52,4 +52,7 @@ export class UserService {
   getStaticObservable() {
     return of(Date.now());
   }
+  getStaticPromise() {
+    return Promise.resolve(Date.now());
+  }
 }
